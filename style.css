@@ -17,15 +17,17 @@ img:hover{
     height: 100vh;
 }
 
-.sidebar{
+.sidebar {
     background-color: black;
     color: rgb(168, 168, 168);
-    display: flex;
+    display: inline-block;
     flex-direction: column;
+    margin-top: -56px;
     width: 250px;
     padding-left: 15px;
     padding: 35px 20px;
     height: 100vh;
+    position: sticky;
 }
 
 .list-unstyled li{
@@ -39,9 +41,67 @@ img:hover{
     width: 100%;
     /* background-color: rgb(85, 85, 85); */
     border-radius: 5px;
-    transition-duration: 0.75s;
+    transition-duration: 0.65s;
 }
 
 svg{
     margin-right: 20px;
+}
+
+.navbar {
+    position: relative;
+    margin-left: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content:flex-start;
+    padding: .5rem 1rem;
+    
+}
+.nav-arrow{
+    height: 20px;
+    color: white;
+    width: 20px;
+}
+
+.nav-arrow:hover{
+    height: 22px;
+    width: 22px;
+    transition-duration: 0.50s;
+    cursor: pointer;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    font-size: 1.1rem;
+    color: rgb(216, 216, 216);
+    border-radius: 8px;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container1 {
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+    margin-top: -689px;
+    flex-wrap: wrap;
+    scroll-behavior: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 10px 10px;
 }
