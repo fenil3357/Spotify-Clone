@@ -63,6 +63,7 @@ svg{
     -ms-flex-pack: justify;
     justify-content:flex-start;
     padding: .5rem 1rem;
+    position: sticky;
     
 }
 .nav-arrow{
@@ -97,7 +98,7 @@ svg{
     margin-left: 350px;
     margin-top: -689px;
     flex-wrap: wrap;
-    scroll-behavior: inherit;
+    scroll-behavior: auto;
     justify-content: center;
     align-items: center;
 }
