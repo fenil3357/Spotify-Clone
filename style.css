@@ -3,6 +3,11 @@ img{
     padding-top: 10px;
     margin-bottom: 25px;
 }
+/* 
+body{
+    /* background-image: url('content/bg-full.jpg'); */
+    /* background-color: rgb(36, 36, 36); */
+/* } */ 
 .sidebar-header{
     list-style: none;
 }
@@ -83,10 +88,10 @@ svg{
     color: white;
 }
 .navbar a:hover{
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: rgb(216, 216, 216);
     border-radius: 8px;
-    transition-duration: 0.25s;
+    transition-duration: 0.35s;
     cursor: pointer;
     text-decoration: none;
 }
@@ -118,4 +123,18 @@ svg{
 }
 .card{
     margin: 10px 10px;
+}
+
+#bgflex{
+    display:inline-flex;
+    width: 1000px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgcontent{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
 }
