@@ -103,6 +103,19 @@ svg{
     align-items: center;
 }
 
+#log{
+    color: black;
+}
+
+#span-log{
+    background-color: white;
+    width: 125px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card{
     margin: 10px 10px;
 }
