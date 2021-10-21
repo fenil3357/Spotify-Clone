@@ -3,6 +3,10 @@ img{
     padding-top: 10px;
     margin-bottom: 25px;
 }
+
+body{
+    scroll-behavior:auto;
+}
 /* 
 body{
     /* background-image: url('content/bg-full.jpg'); */
@@ -27,12 +31,13 @@ img:hover{
     color: rgb(168, 168, 168);
     display: inline-block;
     flex-direction: column;
-    margin-top: -56px;
+    /* margin-top: -56px; */
     width: 250px;
     padding-left: 15px;
     padding: 35px 20px;
     height: 100vh;
     position: sticky;
+    border-right: 2px solid white;
 }
 
 .list-unstyled li{
@@ -55,7 +60,7 @@ svg{
 
 .navbar {
     position: relative;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -69,7 +74,6 @@ svg{
     justify-content:flex-start;
     padding: .5rem 1rem;
     position: sticky;
-    
 }
 .nav-arrow{
     height: 20px;
@@ -125,16 +129,63 @@ svg{
     margin: 10px 10px;
 }
 
-#bgflex{
-    display:inline-flex;
-    width: 1000px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+#maincotent{
+    display: flex;
+    justify-content:space-between;
+}
+
+.bgcontent::before{
+
+    content: "";
+    background: url('Content/bg-full.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -50000;
+    filter: brightness(60%);
+    opacity: 0.95;
 }
 
 .bgcontent{
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    /* border: 7px solid red; */
+    width: 1300px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    /* background:rgb(32, 32, 32); */
+}
+
+.coverImg{
+    border-radius: 25px;
+}
+
+
+
+.playBtn{
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+
+.myPlaylist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.songItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    /* width: 100px; */
+    height: 40px;
+    width: 250px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.bgcontent h2{
+    margin: 50px 50px;
 }
